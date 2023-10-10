@@ -26,3 +26,21 @@ class TesOverloadingMethod1 {
         System.out.println("Sum 2: " + sum2);
     }
 }
+
+//Example of Method Overloading with typePromotion
+
+class OverloadingCalculation1 {
+    void sum(int a, long b) {
+        System.out.println(a + b);
+    }
+
+    void sum(int a, int b, int c) {
+        System.out.println(a + b + c);
+    }
+
+    public static void main(String[] args) {
+        OverloadingCalculation1 object = new OverloadingCalculation1();
+        object.sum(20, 20);
+        object.sum(20, 20, 20);
+    }
+}
